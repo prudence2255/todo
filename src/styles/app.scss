@@ -49,6 +49,7 @@ body{
         input:nth-child(1){
             -webkit-appearance: none;
             appearance: none; 
+            border: none;
         }
 
         .toggler::before{
@@ -229,6 +230,14 @@ button:hover{
     
 }
 
+@media(max-width: 992px){
+    .app{
+        .todos-container{
+            width: 60vw;
+        }
+    }
+}
+
 @media(max-width: 768px){
     .app{
         .todos-container{
@@ -248,18 +257,7 @@ button:hover{
          }  
     }
 
-    .todos-footer{
-        position: relative;
-        padding-bottom: 40px!important;
-    }
-
-    .todo-filters{
-      position: absolute;
-      top: 30px;
-      right: 40%;
-      left: auto;
-
-    }
+   
 
     .todos{
         p:nth-child(2){
@@ -268,4 +266,19 @@ button:hover{
         }
     }
 
+}
+
+@media(max-width: 430px){
+    .todos-footer{
+        position: relative;
+        padding-bottom: 40px!important;
+    }
+
+    .todo-filters{
+      position: absolute;
+      top: 30px;
+      right: 10%;
+      left: auto;
+
+    }
 }
