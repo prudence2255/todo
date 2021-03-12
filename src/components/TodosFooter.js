@@ -25,7 +25,7 @@ export default function TodosFooter() {
     }
 
     return (
-        <div className="todos-footer p-2 px-3">
+        <div className="todos-footer ">
         <div>
         {isActive.length === 1 ? '1 item left' : `${isActive.length} items left`}
          </div>

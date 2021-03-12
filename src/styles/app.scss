@@ -49,7 +49,6 @@ body{
         input:nth-child(1){
             -webkit-appearance: none;
             appearance: none; 
-            opacity: 0;
         }
 
         .toggler::before{
@@ -161,6 +160,13 @@ body{
 
             }
 
+            @media(max-width: 768px){
+                input::before {
+                    content: "✔";
+                    font-size: 18px;
+                }
+            }
+
             input:checked::before {
                 visibility: visible;
               }
@@ -197,6 +203,10 @@ body{
 .todos-footer{
 display: flex;
 justify-content: space-between;
+box-sizing: border-box;
+padding-bottom: 15px;
+margin-left: 15px;
+margin-right: 15px;
 // margin-top: -5px;
 // margin-bottom: 15px;
 // margin-left: 15px;
@@ -222,7 +232,7 @@ button:hover{
 @media(max-width: 768px){
     .app{
         .todos-container{
-            width: 96vw;
+            width: 94vw;
            }
          .add-todo-box{
             input:nth-child(2){
@@ -238,8 +248,16 @@ button:hover{
          }  
     }
 
+    .todos-footer{
+        position: relative;
+        padding-bottom: 40px!important;
+    }
+
     .todo-filters{
-       margin-top: 30px;
+      position: absolute;
+      top: 30px;
+      right: 40%;
+      left: auto;
 
     }
 
