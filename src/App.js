@@ -17,19 +17,21 @@ function App() {
 
   return (
     
-     <div className="app row">
+    <div className="container-fluid">
+    <div className="app row">
     <div>
       <h1>Todos</h1>
     <div className="todos-container w3-card">
-    {/* <AddTodoBox /> */}
+     <AddTodoBox /> 
     <Todo />
     {todos.length > 0 && <TodosFooter />}
     </div>
-    <div className="text-center my-5 text-muted">
+    {/* <div className="text-center my-5 text-muted">
       <p><small>Double-click to edit a todo</small></p>
       <a href="https://github.com/prudence2255/todo"><small>Check the source for this project on Github</small></a>
-    </div>
+    </div> */}
 
+    </div>
     </div>
     </div>
 
