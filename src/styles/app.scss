@@ -41,7 +41,7 @@ body{
         height: 70px;
 
         button{
-            width: 10%;
+            width: 9%;
             margin-bottom: 10px;
             font-size: 30px;
            
@@ -105,17 +105,30 @@ body{
             color: #dbd9d9;
         }
 
-        @media(max-width: 768px){
+        @media(max-width: 430px){
             input:nth-child(2){
                 width: 80%;
                 font-size: 18px;
             }
 
             input::input-placeholder {
-                
+
                 font-size: 18px;
 
             }
+
+            input::-webkit-input-placeholder {
+               
+               font-size: 18px;
+               
+            }
+            
+            input::-moz-placeholder {
+               
+                font-size: 18px;
+               
+            }
+            
         }
     }
 
@@ -207,11 +220,6 @@ body{
             cursor: default;
         }
 
-        @media(max-width: 768px){
-            p:nth-child(2){
-               margin-left: 10px;
-            }   
-        }
 
         p:nth-child(3){
             width: 15%;
@@ -273,14 +281,6 @@ button:hover{
            } 
     }
 
-   
-
-    .todos{
-        p:nth-child(2){
-            width: 60%;
-            margin-left: 20px;
-        }
-    }
 
 }
 
@@ -296,5 +296,16 @@ button:hover{
       right: 15%;
       left: auto;
 
+    }
+
+    .todos{
+        p:nth-child(2){
+            width: 60%;
+            margin-left: 20px;
+        }
+
+        p:nth-child(1){
+            margin-left: 20px;
+        }
     }
 }
