@@ -41,12 +41,18 @@ body{
         height: 70px;
 
         button{
-            width: 9%;
+            width: 10%;
             margin-bottom: 10px;
             font-size: 30px;
            
                 }
         input:nth-child(1){
+            -webkit-appearance: none;
+            appearance: none; 
+            border: none;
+        }
+
+        input:nth-child(1):checked{
             -webkit-appearance: none;
             appearance: none; 
             border: none;
@@ -75,6 +81,8 @@ body{
             outline: none;
             font-size: 25px;
         }
+
+        
         input:focus{
             outline: none;
         }
@@ -95,6 +103,19 @@ body{
             font-style: italic;
             font-size: 25px;
             color: #dbd9d9;
+        }
+
+        @media(max-width: 768px){
+            input:nth-child(2){
+                width: 80%;
+                font-size: 18px;
+            }
+
+            input::input-placeholder {
+                
+                font-size: 18px;
+
+            }
         }
     }
 
@@ -185,6 +206,13 @@ body{
             font-weight: 500;
             cursor: default;
         }
+
+        @media(max-width: 768px){
+            p:nth-child(2){
+               margin-left: 10px;
+            }   
+        }
+
         p:nth-child(3){
             width: 15%;
             margin-left: auto;
@@ -242,19 +270,7 @@ button:hover{
     .app{
         .todos-container{
             width: 94vw;
-           }
-         .add-todo-box{
-            input:nth-child(2){
-                width: 90%;
-                font-size: 18px;
-            }
-
-            input::input-placeholder {
-                
-                font-size: 18px;
-
-            }
-         }  
+           } 
     }
 
    
@@ -277,7 +293,7 @@ button:hover{
     .todo-filters{
       position: absolute;
       top: 30px;
-      right: 13%;
+      right: 15%;
       left: auto;
 
     }
