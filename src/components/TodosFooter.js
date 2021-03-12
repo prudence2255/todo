@@ -3,7 +3,7 @@ import {useSelector, useDispatch} from 'react-redux';
 import { todosSelector, applyFilter, clearCompletedTodos } from '../store/reducer';
 
 export default function TodosFooter() {
-    const [filter, setFilter] = useState();
+    const [filter, setFilter] = useState('all');
     const {todos} = useSelector(todosSelector);
     const isActive = todos.filter(todo => todo.isActive === true);
     const dispatch = useDispatch();
