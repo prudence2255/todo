@@ -53,11 +53,12 @@ body{
         }
 
         input:nth-child(1):checked{
+            outline: none;
             -webkit-appearance: none;
             appearance: none; 
             border: none;
-           color: white;
-           background-color: white;
+           color: white!important;
+           background-color: white!important;
         }
 
         .toggler::before{
@@ -201,6 +202,11 @@ body{
                 input::before {
                     content: "✔";
                     font-size: 18px;
+                    top: -5px;
+                }
+                input{
+                    width: 25px;
+                    height: 25px;
                 }
             }
 
