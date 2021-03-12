@@ -49,6 +49,7 @@ body{
         input:nth-child(1){
             -webkit-appearance: none;
             appearance: none; 
+            opacity: 0;
         }
 
         .toggler::before{
@@ -101,7 +102,7 @@ body{
     {
         .edit-input{
             border: none;
-            width: 90%;
+            width: 70%;
         }
 
         .complete .todo-name{
@@ -178,7 +179,7 @@ body{
             cursor: default;
         }
         p:nth-child(3){
-            width: 10%;
+            width: 15%;
             margin-left: auto;
             font-size: 20px;
             display: none;
@@ -196,10 +197,10 @@ body{
 .todos-footer{
 display: flex;
 justify-content: space-between;
-padding-top: -5px;
-padding-bottom: 10px;
-padding-left: 15px;
-padding-right: 15px;
+// margin-top: -5px;
+// margin-bottom: 15px;
+// margin-left: 15px;
+// margin-right: 15px;
 
 button:hover{
     border: 1px solid rgb(173, 131, 131) 
@@ -221,12 +222,32 @@ button:hover{
 @media(max-width: 768px){
     .app{
         .todos-container{
-            width: 90vw;
+            width: 96vw;
            }
          .add-todo-box{
             input:nth-child(2){
-                width: 80%;
+                width: 90%;
+                font-size: 18px;
+            }
+
+            input::input-placeholder {
+                
+                font-size: 18px;
+
             }
          }  
     }
+
+    .todo-filters{
+       margin-top: 30px;
+
+    }
+
+    .todos{
+        p:nth-child(2){
+            width: 60%;
+            margin-left: 20px;
+        }
+    }
+
 }
