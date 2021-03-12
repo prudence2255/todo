@@ -21,7 +21,7 @@ function App() {
     <div>
       <h1>Todos</h1>
     <div className="todos-container w3-card">
-    <AddTodoBox />
+    {/* <AddTodoBox /> */}
     <Todo />
     {todos.length > 0 && <TodosFooter />}
     </div>
