@@ -27,12 +27,12 @@ body{
         margin: 15px 0;
         opacity: 0.5;
     }
+
     .todos-container{
         background-color: white;
         opacity: 0.9;
         line-height: 30px;
         width: 40vw;
-
     }
 
     .add-todo-box{
@@ -197,9 +197,9 @@ body{
 display: flex;
 justify-content: space-between;
 padding-top: -5px;
-padding-bottom: 5px;
-padding-left: 10px;
-padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 15px;
+padding-right: 15px;
 
 button:hover{
     border: 1px solid rgb(173, 131, 131) 

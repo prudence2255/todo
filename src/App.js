@@ -27,7 +27,7 @@ function App() {
     </div>
     <div className="text-center my-5 text-muted">
       <p><small>Double-click to edit a todo</small></p>
-      <a href="/"><small>Check the source for this project on Github</small></a>
+      <a href="https://github.com/prudence2255/todo"><small>Check the source for this project on Github</small></a>
     </div>
 
     </div>
